@@ -411,7 +411,7 @@
 
 
 
-;; 28. Define a rule to segment clients by wholesaler (> 9 products)
+;; 28. Define a rule to segment clients by wholesaler (> 10 products)
 
 
 (defrule 28-segment-wholesaler
@@ -422,9 +422,9 @@
            (client-id ?clientId))
     (client (client-id ?clientId) (name ?name))
 =>
-    (if (or (> (max (expand$ ?accessory-quantities)) 9) 
-	    (> (max (expand$ ?computer-quantities)) 9) 
-	    (> (max (expand$ ?smartphone-quantities)) 9))
+    (if (or (> (max (expand$ ?accessory-quantities)) 10) 
+	    (> (max (expand$ ?computer-quantities)) 10) 
+	    (> (max (expand$ ?smartphone-quantities)) 10))
          then
              (printout t "%%% 28. WHOLESALE CONSUMER: CUSTOMER #"
 		    ?clientId " %%%" crlf
