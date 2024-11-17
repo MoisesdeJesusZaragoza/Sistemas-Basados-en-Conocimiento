@@ -38,7 +38,7 @@
          then
 	     (printout t "!!! 3. VOUCHER: ORDER #"
 			 ?id " !!!" crlf
-			 "For buying a Macbook Air and an iPhone 15 cash you have: $100 voucher for every $1000 spent." 
+			 "For buying a Macbook Air and an iPhone 16 cash you have: $100 voucher for every $1000 spent." 
 			 crlf crlf)))
 
 
